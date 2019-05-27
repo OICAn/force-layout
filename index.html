@@ -462,7 +462,7 @@
 		father.children.push(forth);
 	}
 	function inArea(node, TreeNode) {
-		if(node.x>=TreeNode.left&&node.x<=TreeNode.right&&node.y>=TreeNode.top&&node.y<=TreeNode.bottom)
+		if((node.x-r)>=TreeNode.left&&(node.x+r)<=TreeNode.right&&(node.y-r)>=TreeNode.top&&(node.y+r)<=TreeNode.bottom)
 			return true;
 		return false;
 	}
